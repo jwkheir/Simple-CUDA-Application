@@ -1,0 +1,34 @@
+﻿Build started 24/05/2016 17:09:01.
+     1>Project "K:\Uni\Year 2\Semester 2\CO569_CW2_Jack_Kheir_20902369\CO569_CW2_Jack_Kheir_20902369\CO569_CW2_Jack_Kheir_20902369.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I. /FIcuda_runtime.h /c "K:\Uni\Year 2\Semester 2\CO569_CW2_Jack_Kheir_20902369\CO569_CW2_Jack_Kheir_20902369\kernel.cu" 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\21406436\AppData\Local\Temp\tmp1592857212974f54a92f1b05616fac92.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "K:\Uni\Year 2\Semester 2\CO569_CW2_Jack_Kheir_20902369\CO569_CW2_Jack_Kheir_20902369\kernel.cu"
+         
+         K:\Uni\Year 2\Semester 2\CO569_CW2_Jack_Kheir_20902369\CO569_CW2_Jack_Kheir_20902369>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "K:\Uni\Year 2\Semester 2\CO569_CW2_Jack_Kheir_20902369\CO569_CW2_Jack_Kheir_20902369\kernel.cu" 
+     1>K:/Uni/Year 2/Semester 2/CO569_CW2_Jack_Kheir_20902369/CO569_CW2_Jack_Kheir_20902369/kernel.cu(60): warning : missing return statement at end of non-void function "GetIndex"
+     1>K:/Uni/Year 2/Semester 2/CO569_CW2_Jack_Kheir_20902369/CO569_CW2_Jack_Kheir_20902369/kernel.cu(97): warning : variable "maxThreads" was declared but never referenced
+     1>K:/Uni/Year 2/Semester 2/CO569_CW2_Jack_Kheir_20902369/CO569_CW2_Jack_Kheir_20902369/kernel.cu(17): warning : variable "N" was declared but never referenced
+     1>K:/Uni/Year 2/Semester 2/CO569_CW2_Jack_Kheir_20902369/CO569_CW2_Jack_Kheir_20902369/kernel.cu(60): warning : missing return statement at end of non-void function "GetIndex"
+     1>K:/Uni/Year 2/Semester 2/CO569_CW2_Jack_Kheir_20902369/CO569_CW2_Jack_Kheir_20902369/kernel.cu(97): warning : variable "maxThreads" was declared but never referenced
+     1>K:/Uni/Year 2/Semester 2/CO569_CW2_Jack_Kheir_20902369/CO569_CW2_Jack_Kheir_20902369/kernel.cu(17): warning : variable "N" was declared but never referenced
+         kernel.cu
+     1>K:/Uni/Year 2/Semester 2/CO569_CW2_Jack_Kheir_20902369/CO569_CW2_Jack_Kheir_20902369/kernel.cu(99): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"K:\Uni\Year 2\Semester 2\CO569_CW2_Jack_Kheir_20902369\Debug\CO569_CW2_Jack_Kheir_20902369.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"K:\Uni\Year 2\Semester 2\CO569_CW2_Jack_Kheir_20902369\Debug\CO569_CW2_Jack_Kheir_20902369.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"K:\Uni\Year 2\Semester 2\CO569_CW2_Jack_Kheir_20902369\Debug\CO569_CW2_Jack_Kheir_20902369.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         CO569_CW2_Jack_Kheir_20902369.vcxproj -> K:\Uni\Year 2\Semester 2\CO569_CW2_Jack_Kheir_20902369\Debug\CO569_CW2_Jack_Kheir_20902369.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\cudart*.dll" "K:\Uni\Year 2\Semester 2\CO569_CW2_Jack_Kheir_20902369\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\cudart*.dll" "K:\Uni\Year 2\Semester 2\CO569_CW2_Jack_Kheir_20902369\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\cudart*.dll" "K:\Uni\Year 2\Semester 2\CO569_CW2_Jack_Kheir_20902369\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\cudart32_65.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\cudart64_65.dll
+                 2 file(s) copied.
+     1>Done Building Project "K:\Uni\Year 2\Semester 2\CO569_CW2_Jack_Kheir_20902369\CO569_CW2_Jack_Kheir_20902369\CO569_CW2_Jack_Kheir_20902369.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.36
